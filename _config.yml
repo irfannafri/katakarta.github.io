@@ -1,0 +1,61 @@
+# Welcome to Nubia Jekyll Theme!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+theme_version: 1.0.4
+
+# Site settings
+title:              Katakarta
+logo:               # Logo image URL
+description:        Thoughts, Stories and Ideas
+baseurl:            '' # The subpath of your site, e.g. /blog
+google_analytics:   'UA-130953765-1'
+url:                'https://www.katakarta.xyz' # The base hostname & protocol for your site
+twitter:            https://twitter.com/inikatakarta
+facebook:            
+instagram:          https://www.instagram.com/katakarta
+
+markdown:  kramdown
+permalink: pretty
+paginate:  11
+sass:
+  style: compressed
+
+gems:
+  - jekyll-paginate
+  - jekyll/tagging
+
+include:
+  - _pages
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag_page
+tag_permalink_style:  pretty
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+# Authors
+authors:
+  eerfahn:
+    name:     eerfahn
+    bio:      Buku cemilannya dan menulis untuk mencernanya
+    gravatar: https://s.gravatar.com/avatar/a96368d1a248fb7dbe5d95ffeaa63443?s=150
+    email:     
+    website:  https://www.katakarta.xyz
+    github:   https://github.com/irfannafri
+    twitter:  https://twitter.com/Vaanjul
+    instagram: https://www.instagram.com/vaaanjul
